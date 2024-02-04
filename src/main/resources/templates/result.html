@@ -76,6 +76,18 @@
         </tr>
         </tbody>
       </table>
+      <div class="sub-title">予定月</div>
+        <table class="table table-bordered">
+          <col span="1" style="background-color: #FFFFFF;">
+          <col span="2" style="background-color: #FFFFFF;">
+          <tbody>
+          <tr>
+            <th>予定月</th>
+            <td><span th:text="*{sch_month}"></span></td>
+            <input type="hidden" name="sch_month" id="sch_month" th:value="*{sch_month}"/>
+          </tr>
+          </tbody>
+        </table>
       <div class="sub-title">お荷物情報</div>
       <table class="table table-bordered">
         <col span="1" style="background-color: #FFFFFF;">

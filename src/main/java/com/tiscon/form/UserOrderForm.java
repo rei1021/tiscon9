@@ -59,6 +59,9 @@ public class UserOrderForm {
 
     @Size(max = 1000)
     private String remarks;
+
+    @NotBlank(message = "月を入力してください")
+    private String sch_month;
     
 
     @NotNull
@@ -174,5 +177,13 @@ public class UserOrderForm {
 
     public void setRemarks(String remarks) {
         this.remarks = remarks;
+    }
+
+    public String getSch_month() {
+        return sch_month;
+    }
+
+    public void setSch_month(String sch_month) {
+        this.sch_month = sch_month;
     }
 }

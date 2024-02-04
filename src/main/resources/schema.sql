@@ -16,6 +16,7 @@ CREATE TABLE IF NOT EXISTS CUSTOMER
     OLD_ADDRESS                     VARCHAR(200) NOT NULL,
     NEW_ADDRESS                     VARCHAR(200) NOT NULL,
     REMARKS                         VARCHAR(1000),
+    SCH_MONTH                       CHAR(2) NOT NULL,
     PRIMARY KEY (CUSTOMER_ID)
 );
 

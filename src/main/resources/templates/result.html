@@ -102,6 +102,11 @@
           <input type="hidden" name="washingMachine" id="washingMachine" th:value="*{washingMachine}"/>
         </tr>
         <tr>
+          <th>冷蔵庫の個数</th>
+          <td><span th:text="*{refrigerator}"></span></td>
+          <input type="hidden" name="refrigerator" id="refrigerator" th:value="*{refrigerator}"/>
+        </tr>
+        <tr>
           <th>洗濯機の設置工事申し込み</th>
           <td><span th:text="*{washingMachineInstallation} ? 'あり' : 'なし'"></span></td>
           <input type="hidden" name="washingMachineInstallation" id="washingMachineInstallation" th:value="*{washingMachineInstallation}"/>

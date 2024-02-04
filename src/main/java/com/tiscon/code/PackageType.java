@@ -14,7 +14,9 @@ public enum PackageType implements CodeEnum {
     /** 自転車 */
     BICYCLE(3, "自転車"),
     /** 洗濯機 */
-    WASHING_MACHINE(4, "洗濯機");
+    WASHING_MACHINE(4, "洗濯機"),
+    /** 冷蔵庫 */
+    REFRIGERATOR(5, "冷蔵庫");
 
     /** 荷物のラベル */
     private final String label;

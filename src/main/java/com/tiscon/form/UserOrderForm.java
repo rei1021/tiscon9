@@ -52,6 +52,10 @@ public class UserOrderForm {
     @NotBlank(message = "洗濯機の個数を入力してください")
     private String washingMachine;
 
+    @Numeric
+    @NotBlank(message = "冷蔵庫の個数を入力してください")
+    private String refrigerator;
+
     @NotNull
     private boolean washingMachineInstallation;
 
@@ -141,6 +145,14 @@ public class UserOrderForm {
 
     public void setWashingMachine(String washingMachine) {
         this.washingMachine = washingMachine;
+    }
+
+    public String getRefrigerator() {
+        return refrigerator;
+    }
+
+    public void setRefrigerator(String refrigerator) {
+        this.refrigerator = refrigerator;
     }
 
     public boolean getWashingMachineInstallation() {

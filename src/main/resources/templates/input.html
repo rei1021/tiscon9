@@ -82,6 +82,11 @@
                  value="1"/>
         </div>
         <div class="form-group">
+          <label for="refrigerator">冷蔵庫の個数</label>
+          <input type="text" id="refrigerator" name="refrigerator" th:field="*{refrigerator}" class="form-control"
+                 value="1"/>
+        </div>
+        <div class="form-group">
           <label for="washingMachineInstallation">洗濯機の設置工事申し込み</label>
           <select id="washingMachineInstallation" name="washingMachineInstallation" class="form-control" th:field="*{washingMachineInstallation}">
             <option th:value="false" th:text="なし">なし</option>

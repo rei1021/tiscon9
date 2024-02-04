@@ -113,9 +113,21 @@
         </tr>
         </tbody>
       </table>
+      <div class="sub-title">補足事項</div>
+      <table class="table table-bordered">
+        <col span="1" style="background-color: #FFFFFF;">
+        <col span="2" style="background-color: #FFFFFF;">
+        <tbody>
+        <tr>
+          <th>補足事項入力フォーム</th>
+          <td><span th:text="*{remarks}"></span></td>
+          <input type="hidden" name="remarks" id="remarks" th:value="*{remarks}"/>
+        </tr>
+        </tbody>
+      </table>
       <div class="form-group">
         <div class="text-center">
-          <button type="submit" name="backToConfirm" class="btn-back">TOPへ戻る</button>
+          <button type="submit" name="backToConfirm" class="btn-back">ご入力内容の確認に戻る</button>
         </div>
       </div>
     </div>

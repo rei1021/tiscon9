@@ -28,6 +28,8 @@ public class UserOrderDto {
 
     private boolean washingMachineInstallation;
 
+    private String remarks;
+
     public String getCustomerName() {
         return customerName;
     }
@@ -130,5 +132,13 @@ public class UserOrderDto {
 
     public void setWashingMachineInstallation(Boolean washingMachineInstallation) {
         this.washingMachineInstallation = washingMachineInstallation;
+    }
+
+    public String getRemarks() {
+        return remarks;
+    }
+
+    public void setRemarks(String remarks) {
+        this.remarks = remarks;
     }
 }
